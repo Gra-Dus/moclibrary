@@ -47,7 +47,7 @@ dependencies {
 afterEvaluate {
     publishing{
         publications{
-            create<MavenPublication>("release"){
+            create<MavenPublication>("library"){
                 from(components.getByName("release"))
                 groupId = "com.github.Gra-Dus"
                 artifactId = "moclibrary"
